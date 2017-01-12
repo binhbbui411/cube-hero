@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <title>Fortifi Hero Demo</title>
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="../fort-hero.html">
+  <link rel="import" href="../fort-hero-sticker.html">
+  <link rel="import" href="../fort-hero-bar.html">
+  <link rel="import" href="../fort-hero-bar-item.html">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', 'Noto', sans-serif;
+      font-size: 13px;
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+
+    fort-hero {
+      width: 1000px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body unresolved>
+
+<fort-hero>
+  Here is a basic hero with any custom content
+</fort-hero>
+
+<fort-hero background="http://localhost:8080/components/fort-hero/demo/map.jpg" color="#3884cd">
+  Here is a basic hero with any custom content<br/>
+  Here is a basic hero with any custom content<br/>
+  Here is a basic hero with any custom content<br/>
+  Here is a basic hero with any custom content<br/>
+  Here is a basic hero with any custom content<br/>
+  Here is a basic hero with any custom content<br/>
+  Here is a basic hero with any custom content<br/>
+  Here is a basic hero with any custom content<br/>
+  Here is a basic hero with any custom content<br/>
+  Here is a basic hero with any custom content<br/>
+  <fort-hero-sticker
+    src="http://www.clickatlife.gr/fu/t/13934/600/600/0x00000000004c6038/2/to-sikouel-abatar-pulon.jpg"></fort-hero-sticker>
+
+  <fort-hero-bar>
+    <fort-hero-bar-item title="Risk Score" value="71.71"></fort-hero-bar-item>
+    <fort-hero-bar-item title="Country Match" value="Yes"></fort-hero-bar-item>
+    <fort-hero-bar-item title="Distance to Billing" value="8 km"></fort-hero-bar-item>
+    <fort-hero-bar-item title="Proxy" value="No"></fort-hero-bar-item>
+    <fort-hero-bar-item title="Free Email" value="Yes"></fort-hero-bar-item>
+  </fort-hero-bar>
+</fort-hero>
+
+
+<fort-hero color="#3884cd">
+  Here is a basic hero with any custom content<br/>
+  Here is a basic hero with any custom content<br/>
+  Here is a basic hero with any custom content<br/>
+  Here is a basic hero with any custom content<br/>
+  Here is a basic hero with any custom content<br/>
+  <fort-hero-sticker>
+
+    <h1>10/10</h1>
+    Fraud Score
+
+  </fort-hero-sticker>
+  <fort-hero-bar>
+    <fort-hero-bar-item title="Risk Score" value="71.71"></fort-hero-bar-item>
+    <fort-hero-bar-item title="Country Match" value="Yes"></fort-hero-bar-item>
+    <fort-hero-bar-item title="Distance to Billing" value="8 km"></fort-hero-bar-item>
+    <fort-hero-bar-item title="Proxy" value="No"></fort-hero-bar-item>
+    <fort-hero-bar-item title="Free Email" value="Yes"></fort-hero-bar-item>
+  </fort-hero-bar>
+</fort-hero>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<link rel="import" href="../polymer/polymer.html">
+<dom-module id="fort-hero-bar">
+  <template>
+    <style>
+      :host {
+        display: flex;
+        background: rgba(0, 0, 0, 0.45);
+        height: 64px;
+        padding-left:192px;
+        color: #FFFFFF;
+      }
+
+      :host ::slotted(fort-hero-bar-item) {
+        margin: 0 16px;
+        flex-grow: 1;
+      }
+    </style>
+    <slot></slot>
+  </template>
+
+  <script>
+    Polymer(
+      {
+        is: 'fort-hero-bar'
+      }
+    );
+  </script>
+</dom-module>
