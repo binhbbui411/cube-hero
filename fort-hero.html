@@ -1,5 +1,6 @@
 <link rel="import" href="../polymer/polymer.html">
-<dom-module id="fort-hero" attributes="background">
+
+<dom-module id="fort-hero" attributes="background color">
   <template>
     <style>
       :host {
@@ -17,11 +18,12 @@
       }
 
       :host #wrapper {
-
         min-height: 112px;
-
-        padding-left: 192px;
-        padding-bottom: 64px;
+        padding-bottom: 80px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 16px;
+        box-sizing: border-box;
       }
 
       :host([background]) #wrapper {
@@ -35,8 +37,8 @@
         position: relative;
       }
 
-      :host(:not([background])) #wrapper::before {
-        background: url('https://s-media-cache-ak0.pinimg.com/originals/82/a6/6c/82a66c6b69a61564494a682e4fb0d704.jpg');
+      :host(:not([background]))::before {
+        background: url('./polygon.svg');
         background-position: center center;
         background-size: cover;
 
@@ -64,6 +66,11 @@
         bottom: 0;
         z-index: 1;
       }
+
+      :host([has-sticker]) ::slotted(fort-hero-bar),
+      :host([has-sticker]) #wrapper {
+        padding-left: 192px;
+      }
     </style>
     <div id="wrapper">
       <slot></slot>
@@ -75,14 +82,11 @@
       {
         is:         'fort-hero',
         properties: {
-          'background': {
-            type: String
-          },
-          'color':      {
-            type: String
-          }
+          background: {type: String},
+          color:      {type: String},
+          hasSticker: {type: Boolean, reflectToAttribute: true}
         },
-        ready:      function ()
+        attached:   function ()
                     {
                       if(this.background)
                       {
@@ -92,6 +96,8 @@
                       {
                         this.updateStyles({'--hero-background-color': this.color});
                       }
+
+                      this.hasSticker = this.queryDistributedElements('fort-hero-sticker').length > 0;
                     }
       }
     );

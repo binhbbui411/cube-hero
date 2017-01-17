@@ -6,13 +6,22 @@
         display: flex;
         background: rgba(0, 0, 0, 0.45);
         height: 64px;
-        padding-left:192px;
+        padding: 0 32px;
         color: #FFFFFF;
+        flex-wrap: wrap;
       }
 
       :host ::slotted(fort-hero-bar-item) {
         margin: 0 16px;
         flex-grow: 1;
+      }
+
+      :host ::slotted(fort-hero-bar-item:first-of-type) {
+        margin-left: 0;
+      }
+
+      :host ::slotted(fort-hero-bar-item:last-of-type) {
+        margin-right: 0;
       }
     </style>
     <slot></slot>

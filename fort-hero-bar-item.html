@@ -7,23 +7,24 @@
       :host {
         display: flex;
         flex-direction: column;
-        height:64px;
+        height: 64px;
+        flex-shrink: 0;
       }
 
-      h1,p {
+      h1, p {
         margin: 0;
         font-weight: normal;
         @apply --paper-font-body1;
       }
 
-      h1{
-        font-size:18px;
-        margin-top:12px;
-        margin-bottom:2px;
+      h1 {
+        font-size: 18px;
+        margin-top: 12px;
+        margin-bottom: 2px;
       }
 
-      p{
-        font-size:13px;
+      p {
+        font-size: 13px;
       }
     </style>
     <h1>[[value]]</h1>
