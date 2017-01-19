@@ -1,6 +1,6 @@
 <link rel="import" href="../polymer/polymer.html">
 
-<dom-module id="fort-hero" attributes="background color">
+<dom-module id="cube-hero" attributes="background color">
   <template>
     <style>
       :host {
@@ -52,14 +52,14 @@
         pointer-events: none;
       }
 
-      :host ::slotted(fort-hero-sticker) {
+      :host ::slotted(cube-hero-sticker) {
         position: absolute;
         left: 0;
         bottom: 0;
         z-index: 2;
       }
 
-      :host ::slotted(fort-hero-bar) {
+      :host ::slotted(cube-hero-bar) {
         position: absolute;
         left: 0;
         right: 0;
@@ -67,7 +67,7 @@
         z-index: 1;
       }
 
-      :host([has-sticker]) ::slotted(fort-hero-bar),
+      :host([has-sticker]) ::slotted(cube-hero-bar),
       :host([has-sticker]) #wrapper {
         padding-left: 192px;
       }
@@ -80,7 +80,7 @@
   <script>
     Polymer(
       {
-        is:         'fort-hero',
+        is:         'cube-hero',
         properties: {
           background: {type: String},
           color:      {type: String},
@@ -97,7 +97,7 @@
                         this.updateStyles({'--hero-background-color': this.color});
                       }
 
-                      this.hasSticker = this.queryDistributedElements('fort-hero-sticker').length > 0;
+                      this.hasSticker = this.queryDistributedElements('cube-hero-sticker').length > 0;
                     }
       }
     );

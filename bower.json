@@ -1,5 +1,5 @@
 {
-  "name": "fort-hero",
+  "name": "cube-hero",
   "version": "1.0.0",
   "authors": [
     "Anonymous <anonymous@example.com>"
@@ -11,9 +11,9 @@
     "seed"
   ],
   "private": true,
-  "main": "fort-hero.html",
+  "main": "cube-hero.html",
   "license": "MIT",
-  "homepage": "https://github.com/FortifiElements/fort-hero/",
+  "homepage": "https://github.com/CubexElements/cube-hero/",
   "ignore": [
     "/.*",
     "/test/",

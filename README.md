@@ -1,6 +1,6 @@
-_[Demo and API docs](https://elements.fortifi.it/elements/fort-hero)_
+_[Demo and API docs](https://elements.cubex.io/elements/cube-hero)_
 
-##&lt;fort-hero&gt;
+##&lt;cube-hero&gt;
 
 An element providing a starting point for your own reusable Polymer elements.
 
@@ -30,4 +30,4 @@ And you can run it via:
     polyserve
 
 Once running, you can preview your element at
-`http://localhost:8080/components/fort-hero/`, where `fort-hero` is the name of the directory containing it.
+`http://localhost:8080/components/cube-hero/`, where `cube-hero` is the name of the directory containing it.

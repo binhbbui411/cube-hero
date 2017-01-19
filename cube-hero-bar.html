@@ -1,5 +1,5 @@
 <link rel="import" href="../polymer/polymer.html">
-<dom-module id="fort-hero-bar">
+<dom-module id="cube-hero-bar">
   <template>
     <style>
       :host {
@@ -11,16 +11,16 @@
         flex-wrap: wrap;
       }
 
-      :host ::slotted(fort-hero-bar-item) {
+      :host ::slotted(cube-hero-bar-item) {
         margin: 0 16px;
         flex-grow: 1;
       }
 
-      :host ::slotted(fort-hero-bar-item:first-of-type) {
+      :host ::slotted(cube-hero-bar-item:first-of-type) {
         margin-left: 0;
       }
 
-      :host ::slotted(fort-hero-bar-item:last-of-type) {
+      :host ::slotted(cube-hero-bar-item:last-of-type) {
         margin-right: 0;
       }
     </style>
@@ -30,7 +30,7 @@
   <script>
     Polymer(
       {
-        is: 'fort-hero-bar'
+        is: 'cube-hero-bar'
       }
     );
   </script>
