@@ -12,7 +12,6 @@
   ],
   "private": true,
   "main": "cube-hero.html",
-  "license": "MIT",
   "homepage": "https://github.com/CubexElements/cube-hero/",
   "ignore": [
     "/.*",
