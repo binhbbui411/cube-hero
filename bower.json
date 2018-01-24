@@ -11,6 +11,7 @@
     "seed"
   ],
   "private": true,
+  "license": "MITNFA",
   "main": "cube-hero.html",
   "homepage": "https://github.com/CubexElements/cube-hero/",
   "ignore": [
