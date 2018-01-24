@@ -11,7 +11,7 @@
     "seed"
   ],
   "private": true,
-  "license": "EPL-1.0",
+  "license": "GPL-2.0-or-later",
   "main": "cube-hero.html",
   "homepage": "https://github.com/CubexElements/cube-hero/",
   "ignore": [
